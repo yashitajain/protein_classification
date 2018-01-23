@@ -1,5 +1,5 @@
 ## protein_classification_methods
-<H1>Protein Classification Methods
+<H1>Protein Classification Methods</H1>
 
 Three different protein classification model has been discussed. 
 1. <b>Sequence identity model:</b> uses protein sequences to find the similiar protein sequences and we know that, similiar sequences tend to have similiar functions. I used USEARCH. One can use it through linux command line. 
