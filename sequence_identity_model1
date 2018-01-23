@@ -1,0 +1,9 @@
+MODEL1. Sequence identity using usearch(a fast heuristic-based sequence identity search)(LINUX COMMAND LINE):
+
+ A. Build database using target set of sequences(target1.faa-->sequences having therapeutic functions(label-1))
+ 
+           usearch -makeudb_usearch target1.fasta -output db1.udb
+
+ B. Sequence alignment of query sequences(10,000 protein sequences) against the newly made database(db1.udb)
+
+           usearch -usearch_global sg_putative_10000.faa -db db1.udb -id 0.10 -userfields query+target+ql+tl+id -userout output.csv
