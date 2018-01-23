@@ -1,0 +1,13 @@
+MODEL2. Building Hidden Markov Model using HMMER(LINUX COMMAND LINE):
+ 
+  A. Building HMM Profile using training set. To use hmmbuild, we will need MSA of the training sequences.
+
+                        hmmbuild target.hmm target1.stockholm
+
+ B. Compress the profile database into binary compression and indexing of the flatfiles. 
+
+                      hmmpress target.hmm
+
+C. Searching the database sequence against the HMM Profile.
+
+                      hmmsearch --domE 1e-5 --domtblout hmmprofile_result.csv --noali target.hmm sg_putative_10000.faa
