@@ -15,7 +15,7 @@ fasta_data=function(fas){
   return(ss)
 }
 traindata=fasta_data('target.faa')
-testdata=fasta_data('sg_putative_10000.faa')
+testdata=fasta_data('test_10000.faa')
 
 #Building feature variables by using different physiochemical properties like aaComp, hydrophobicity, molecular weight etc. using Peptide module
 
